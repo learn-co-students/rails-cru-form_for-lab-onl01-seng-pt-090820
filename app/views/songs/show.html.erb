@@ -1,0 +1,4 @@
+<h1><%= @song.name %></h1>
+
+<%= link_to @song.genre.name, :controller => 'genres', :action => 'show', :id=> @song.genre.id %>
+<%= link_to @song.artist.name, :controller => 'artists', :action => 'show', :id => @song.artist.id %>
